@@ -1,0 +1,73 @@
+.no-js{
+   
+}
+ .Content-Area{
+    background-color: blanchedalmond;
+    width: 960px;
+    height: 500px;
+    position: relative;
+    top: 100px;
+    left: 345px; 
+    
+ }
+
+#Joshua-Kelly{
+    position: absolute;
+    background-color: aqua;
+    width: 150px;
+    height: 65px;
+    line-height: 4;
+    left: 345px;
+    text-align: center;
+}
+
+.Navigation{
+    background-color: coral;
+    width: 100%;
+    height: 65px;
+    line-height: 4;
+    overflow: hidden;
+}
+
+#About{
+    position: relative;
+    margin: 0 10px;
+    float: right;
+}
+
+#Portfolio{
+    position: relative;
+    margin: 0 10px;
+    float: right;
+}
+#Contact{
+    position: relative;
+    margin: 0 10px;
+    float: right;
+}
+
+#About-Me{
+    color: aqua;
+    text-transform: uppercase;
+    text-emphasis: bold;
+}
+
+.Paragraphs{
+
+}
+
+#P-One{
+
+}
+
+#P-Two{
+
+}
+
+#P-Three{
+
+}
+
+footer{
+
+}
