@@ -5,24 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>About Me</title>
   </head>
 
   <body>
     <header>
-      <h1>Joshua Kelly</h1>
-      <ul>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </ul>
+      <div class="container">
+        <a id="logo" href="index.html">Joshua Kelly</a>
+        <nav>
+          <a href="index.html" class="navLinks">About</a>
+          <a href="portfolio.html" class="navLinks">Portfolio</a>
+          <a href="contact.html" class="navLinks">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <section>
+    <section class="container">
       <h1>About Me</h1>
-      <img src="assets/Images/CatPhoto.jpeg" />
+      <img
+        src="assets/Images/CatPhoto.jpeg"
+        class="auth-image"
+        alt="Not me rn lol"
+      />
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
         expedita, fugit quia nam eveniet quae recusandae deserunt blanditiis
@@ -46,6 +51,10 @@
       </p>
     </section>
 
-    <footer>&copy;</footer>
+    <footer>
+      <div class="container">
+        Copyright &copy;
+      </div>
+    </footer>
   </body>
 </html>
