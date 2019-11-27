@@ -8,28 +8,58 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="index.html" class="myName">Joshua Kelly</a>
-      <nav class="navBar">
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    <header>
+      <div class="container">
+        <a id="logo" href="index.html">Joshua Kelly</a>
+        <nav>
+          <a href="index.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <section class="mainContent">
-      <h1 class="sectionHeader">Contact</h1>
-      <form>
-        <p>Name</p>
-        <input type="text" placeholder="Enter Your Full Name" />
-        <p>Email</p>
-        <input type="text" placeholder="Enter Your Email" />
-        <p>Message</p>
-        <input type="text" placeholder="Type Your Message" />
-        <button type="submit">Submit</button>
+    <section class="container">
+      <h1>Contact</h1>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Smith"
+              required="required"
+            />
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+              required="required"
+            />
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required="required"
+            ></textarea>
+          </li>
+        </ul>
+        <input type="submit" />
       </form>
     </section>
 
-    <footer>&copy;</footer>
+    <footer>
+      <div class="container">
+        Copyright &copy;
+      </div>
+    </footer>
   </body>
 </html>

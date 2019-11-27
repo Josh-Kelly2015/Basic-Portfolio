@@ -11,6 +11,7 @@ header {
   background-color: #ffffff;
   border-color: #cccccc;
   border-bottom-style: solid;
+  margin-bottom: 25px;
 }
 #logo {
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -60,10 +61,67 @@ p {
   margin-right: 0.5rem;
 }
 footer {
-  margin-top: auto;
-  padding: 25px;
+  margin-top: 50px;
+  padding: 30px;
   color: #ffffff;
   text-align: center;
   background: #666666;
   border-top: 5px solid #4aaaa5;
+}
+/* portfolio page */
+.work {
+  position: relative;
+  width: 260px;
+  margin: 20px 0 25px;
+}
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+.work img {
+  width: 100%;
+  border: 0 none;
+}
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 125px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+}
+/* contact page */
+#contact-form li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+label,
+input[type="text"],
+input[type="email"],
+textarea {
+  display: flex;
+  color: black;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid darkgrey;
+  height: 2rem;
+  font-size: 14px;
+}
+textarea {
+  height: 15rem;
+  width: 55rem;
+}
+input[type="submit"] {
+  padding: 10px 30px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  color: #ffffff;
+  cursor: pointer;
+  background: #4aaaa5;
 }
