@@ -98,6 +98,7 @@ footer {
   background: #4aaaa5;
 }
 /* contact page */
+
 #contact-form li {
   margin-bottom: 10px;
   list-style: none;
@@ -108,21 +109,21 @@ input[type="email"],
 textarea {
   display: flex;
   color: black;
+  width: 255px;
 }
 input[type="text"],
 input[type="email"],
 textarea {
   height: 2rem;
   font-size: 13px;
+  width: 250px;
 }
 textarea {
-  height: 150px;
-  width: 550px;
+  height: 200px;
+  width: 250px;
 }
 input[type="submit"] {
   padding: 10px 30px;
-  margin-left: 15px;
-  margin-bottom: 15px;
   font-size: 1.25rem;
   color: #ffffff;
   cursor: pointer;
