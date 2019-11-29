@@ -26,12 +26,8 @@ header {
   font-weight: 700;
   font-size: 25px;
   padding: 30px;
-  display: inline-block;
 }
-nav {
-  float: right;
-  margin-top: 2.5rem;
-}
+
 nav a {
   padding: 10px;
   color: #999;
@@ -50,21 +46,16 @@ h1 {
   margin: 0.5rem;
 }
 section {
-  clear: both;
   background-color: #ffffff;
 }
 .auth-image {
-  float: left;
-  width: 20rem;
+  width: 250px;
   margin-top: 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
-p {
-  padding: 0;
-  margin-right: 0.5rem;
-}
+
 footer {
   margin-top: 50px;
   padding: 30px;
@@ -77,21 +68,16 @@ footer {
 .work {
   position: relative;
   width: 260px;
-  margin: 20px 0 25px;
-}
-.work:nth-child(even) {
-  margin-right: 40px;
+  margin: 5px 10px;
 }
 .work img {
   width: 100%;
-  border: 0 none;
 }
 .work h3 {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 10px;
   margin-bottom: 125px;
   font-weight: 300;
   color: #ffffff;
@@ -113,13 +99,12 @@ textarea {
 input[type="text"],
 input[type="email"],
 textarea {
-  border: 1px solid darkgrey;
   height: 2rem;
-  font-size: 14px;
+  font-size: 13px;
 }
 textarea {
-  height: 15rem;
-  width: 55rem;
+  height: 150px;
+  width: 550px;
 }
 input[type="submit"] {
   padding: 10px 30px;
