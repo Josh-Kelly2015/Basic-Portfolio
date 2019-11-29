@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="/your-path-to-fontawesome/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>About Me</title>
   </head>
@@ -12,14 +17,15 @@
   <body>
     <header>
       <div class="container">
-        <nav class="navbar">
-          <a href="index.html" class="logo">
-            Joshua Kelly
-          </a>
-          <ul class="nav-links">
-            <li class="nav-item"><a href="index.html">About</a></li>
-            <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        <nav>
+          <ul class="menu">
+            <li class="logo"><a href="index.html">Joshua Kelly</a></li>
+            <li class="item"><a href="index.html">About</a></li>
+            <li class="item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+            <li class="toggle">
+              <a href="#"><i class="fas fa-bars"></i></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -60,5 +66,27 @@
         Copyright &copy;
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function() {
+        $(".toggle").on("click", function() {
+          if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+            $(this)
+              .find("a")
+              .html("<i class='fas fa-bars'></i>");
+          } else {
+            $(".item").addClass("active");
+            $(this)
+              .find("a")
+              .html("<i class='fas fa-times'></i>");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
