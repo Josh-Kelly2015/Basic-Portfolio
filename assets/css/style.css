@@ -18,14 +18,12 @@ header {
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
 }
-
 nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   font-weight: 700;
   font-size: 25px;
@@ -35,24 +33,20 @@ nav {
   color: white;
   background-color: #4aaaa5;
 }
-
 .nav-links {
   list-style: none;
   display: flex;
 }
-
 .nav-item a {
   display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
   color: black;
 }
-
 .nav-item:hover {
   border-radius: 5px;
   background-color: #4aaaa5;
 }
-
 h1 {
   font-family: Georgia, Times, "Times New Roman", serif;
   color: #4aaaa5;
@@ -68,7 +62,6 @@ section {
   width: 200px;
   margin-left: 10px;
 }
-
 footer {
   margin-top: 50px;
   padding: 30px;
@@ -78,6 +71,10 @@ footer {
   border-top: 5px solid #4aaaa5;
 }
 /* portfolio page */
+#allWork {
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 .work {
   position: relative;
   width: 260px;
@@ -98,7 +95,6 @@ footer {
   background: #4aaaa5;
 }
 /* contact page */
-
 #contact-form li {
   margin-bottom: 10px;
   list-style: none;
