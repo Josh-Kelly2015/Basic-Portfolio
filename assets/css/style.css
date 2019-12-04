@@ -82,7 +82,99 @@ section p {
   background: black;
   color: white;
 }
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70%;
+  background: gray;
+}
+.card {
+  background: white;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+input,
+.toggle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  outline: none;
+  z-index: 10;
+}
+input {
+  opacity: 0;
+}
+.toggle {
+  pointer-events: none;
+  border-radius: 50%;
+  background: black;
+  transition: 0.5s;
+  text-align: center;
+  line-height: 50px;
+  font-size: 50px;
+  box-shadow: 0 0 0 0px purple;
+}
+input:checked ~ .toggle {
+  box-shadow: 0 0 0 500px purple;
+  transform: rotate(225deg);
+}
+.imgBx,
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.content {
+  padding-bottom: 20px;
+  z-index: 11;
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0;
+}
+input:checked ~ .content {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
 #contact {
   background: white;
   color: black;
+}
+/* contact page */
+
+#contact-form li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+textarea {
+  display: flex;
+  color: black;
+  width: 255px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  height: 2rem;
+  font-size: 13px;
+  width: 250px;
+}
+textarea {
+  height: 150px;
+  width: 550px;
+  height: 200px;
+  width: 250px;
+}
+input[type="submit"] {
+  padding: 10px 30px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  color: #ffffff;
+  cursor: pointer;
 }

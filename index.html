@@ -32,18 +32,59 @@
         </p>
       </section>
       <section id="portfolio">
-        <h1>About me</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis
-          quibusdam, autem fugit nobis nesciunt.
-        </p>
+        <div class="cardContainer">
+          <div class="card">
+            <input type="checkbox" name="" />
+            <div class="toggle">+</div>
+            <div class="imgBx">
+              <img src="./assets/Images/technics-q-c-640-480-1.jpg" />
+            </div>
+            <div class="content">
+              <h2>About me</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                corporis quibusdam, autem fugit nobis nesciunt.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="contact">
-        <h1>About me</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis
-          quibusdam, autem fugit nobis nesciunt.
-        </p>
+        <section class="div">
+          <h1>Contact</h1>
+          <form id="contact-form">
+            <ul>
+              <li>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="John Smith"
+                  required="required"
+                />
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                  required="required"
+                />
+              </li>
+              <li>
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required="required"
+                ></textarea>
+              </li>
+            </ul>
+            <input type="submit" />
+          </form>
+        </section>
       </section>
     </div>
   </body>
